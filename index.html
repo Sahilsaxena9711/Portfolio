@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sahil Saxena</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nanum+Gothic+Coding&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .loading {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .loadingText {
+        color: #f95959;
+        align-self: center;
+        font-size: 1.4rem;
+        text-decoration: underline;
+        animation: example 1s linear 0.5s infinite alternate;
+      }
+      @keyframes example {
+        0% {
+          text-decoration: underline;
+        }
+        100% {
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body onload="loadFunc()">
+    <div class="loading" id="loading">
+      <span class="loadingText"> > Loading...</span>
+    </div>
+    <header>
+      <span class="logo"> <span class="logoColor">>ev</span> Sahil</span>
+      <!-- <span onclick="onChangeTheme()" class="theme">Change Theme</span> -->
+    </header>
+    <div class="discription">
+      <span class="name">Sahil Saxena</span>
+      <span class="work">Engineer</span>
+      <span class="game">Football Pundit</span>
+      <span class="like">Space Enthusiast</span>
+    </div>
+    <div class="about">
+      <span class="title">ABOUT ME</span>
+      <div class="acontainer">
+        <div class="textContainer">
+          <span class="text">
+            I'm a passionate Software Engineer with a focus on building
+            innovative, high-performance applications. With expertise in both
+            front-end and back-end development, I craft seamless, user-centric
+            solutions that solve real-world problems. I’m driven by a love for
+            clean code, efficient systems, and continuous learning.
+          </span>
+        </div>
+        <div class="square">
+          <img src="./assets/dev.webp" class="dev" />
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <span class="title">KEY PROJECTS</span>
+      <div class="pcontainer">
+        <div class="projectList">
+          <span
+            onclick="{onMarkActive(event)}"
+            id="Supplymint"
+            class="project active"
+            >Supplymint</span
+          >
+          <span onclick="{onMarkActive(event)}" id="Slacktivism" class="project"
+            >Slacktivism</span
+          >
+          <span onclick="{onMarkActive(event)}" id="Beatsy" class="project"
+            >Beatsy</span
+          >
+          <span onclick="{onMarkActive(event)}" id="HtmlViewer" class="project"
+            >HtmlViewer</span
+          >
+          <!-- <span class="project">Calendar Pi</span>
+          https://calendar-pi.vercel.app/ -->
+          <span onclick="{onMarkActive(event)}" id="Blacker" class="project"
+            >Blacker</span
+          >
+          <span
+            onclick="{onMarkActive(event)}"
+            id="Underreacted"
+            class="project"
+            >Underreacted</span
+          >
+        </div>
+        <div class="projectDescription" id="descriptionList">
+          <span class="writtenText Underreacted dnone">
+            The blogging page, built using Gatsby.js and React.js, is a platform
+            where a web developer shares insights and tutorials about modern web
+            technologies. It features fast loading times, static site
+            generation, and a responsive design for optimal user experience. The
+            developer regularly posts technical blogs covering various topics
+            like JavaScript frameworks, React best practices, and web
+            development tips. The site allows users to easily navigate through
+            categories and explore the developer's knowledge. Gatsby and React
+            power the page, ensuring a smooth, dynamic experience for readers.
+            <br /><br />Link:
+            <a href="https://underreacted.surge.sh/"
+              >https://underreacted.surge.sh/</a
+            >
+          </span>
+
+          <span class="writtenText HtmlViewer dnone">
+            An HTML Viewer App is an online tool that allows users to view and
+            preview HTML code in real-time. It enables users to write or paste
+            HTML code and instantly see the rendered output in a browser-like
+            interface. The app typically supports features like syntax
+            highlighting, error detection, and live updates as you edit the
+            code. It's a helpful tool for developers, learners, and anyone
+            experimenting with web design or HTML. Many such apps are free and
+            accessible directly from a web browser, requiring no
+            installation.<br /><br />Link:
+            <a href="https://htmlviewer.surge.sh/"
+              >https://htmlviewer.surge.sh/</a
+            > </span
+          >=
+
+          <span class="writtenText Blacker dnone">
+            Blacker is an npm plugin that enables dark mode for React
+            applications. To use it, install the package with npm install
+            blacker or yarn add blacker. Simply import blacker and wrap your
+            component inside it to apply dark mode. You can customize the
+            position of the dark mode overlay using the position prop, with
+            options like "top-right", "top-left", "bottom-right", and
+            "bottom-left" (default is "top-right"). This allows easy integration
+            of dark mode with customizable placement in React apps.<br /><br />Link:
+            <a href="https://www.npmjs.com/package/blacked"
+              >https://www.npmjs.com/package/blacked</a
+            >
+          </span>
+          <span class="writtenText Beatsy dnone">
+            Beatsy is a music platform featuring a collection of popular tracks,
+            primarily from artists like Eminem, Dr. Dre, and Akon. The site
+            offers a search function for songs, artists, and albums. Tracks from
+            famous hip-hop and rap artists, such as "Lose Yourself" and "Stan,"
+            are available to listen to. Users can explore music by song titles
+            or artists, with the option to play tracks directly. The platform
+            highlights well-known songs and collaborations across genres.<br /><br />Link:
+            <a href="https://beatsy.surge.sh/">https://beatsy.surge.sh/</a>
+          </span>
+          <span class="writtenText Slacktivism dnone"
+            >Slacktivism is a Delhi-based slackline community founded in 2013 by
+            Enrico Fabian, offering weekly sessions since then. Slacklining
+            involves walking on a flat, tensioned webbing between anchors. The
+            community holds regular sessions at parks and other outdoor
+            locations, including Waterline and Highline events. Updates for
+            session times and locations are shared on Instagram and Facebook.
+            The group promotes a free, positive atmosphere, emphasizing balance,
+            self-discovery, and good vibes.<br /><br />Link:
+            <a href="https://www.slacktivism.in/"
+              >https://www.slacktivism.in/</a
+            ></span
+          >
+          <span class="writtenText Supplymint dblock">
+            Supplymint is a cloud-based supply chain management platform that
+            connects all aspects of planning, purchasing, inventory, tracking,
+            and sales in one collaborative system. It offers features such as
+            AI-powered demand forecasting, procurement management, purchase
+            order tracking, and vendor catalog management to optimize business
+            operations. The platform supports seamless integration with various
+            systems like WMS and ERPs, enhancing collaboration and efficiency
+            for teams and vendors. With a focus on automation, it simplifies
+            workflows, reduces errors, and ensures timely actions through
+            notifications and reminders. Trusted by over 1,000 businesses, it
+            aims to empower modern teams with flexible, scalable tools for
+            supply chain optimization. <br /><br />Link:
+            <a href="https://www.supplymint.com/"
+              >https://www.supplymint.com/</a
+            >
+          </span>
+        </div>
+      </div>
+      <br />
+      <br />
+      <span class="writtenText">
+        <a target="_blank" href="https://github.com/Sahilsaxena9711"
+          >More Projects on GitHub&#8599;</a
+        >
+      </span>
+    </div>
+    <div class="workex">
+      <span class="title">WORK EXPERIENCE</span>
+      <div class="companies">
+        <div class="company">
+          <div class="logoContainer">
+            <img src="./assets/moglix.png" alt="" class="companyLogo" />
+          </div>
+          <span class="companyDescription companyName">Moglix</span>
+          <span class="companyDescription">Lead Engineer</span>
+          <span class="companyDescription">(2020-Present)</span>
+        </div>
+        <div class="company">
+          <div class="logoContainer">
+            <img src="./assets/progcap.svg" alt="" class="companyLogo" />
+          </div>
+          <span class="companyDescription companyName">Progcap</span>
+          <span class="companyDescription">Software Engineer</span>
+          <span class="companyDescription">(2019-2020)</span>
+        </div>
+        <div class="company">
+          <div class="logoContainer">
+            <img src="./assets/tc.png" alt="" class="companyLogo" />
+          </div>
+          <span class="companyDescription companyName">Turning Cloud</span>
+          <span class="companyDescription">Software Engineer</span>
+          <span class="companyDescription">(2018-2019)</span>
+        </div>
+      </div>
+    </div>
+    <div class="photos">
+      <div class="astral">
+        <div class="imageContainer">
+          <img src="./assets/night7.webp" alt="" class="astralImg" />
+          <img src="./assets/night5.webp" alt="" class="astralImg" />
+          <img src="./assets/hanoi.webp" alt="" class="astralImg" />
+          <img src="./assets/night6.webp" alt="" class="astralImg" />
+          <img src="./assets/night3.webp" alt="" class="astralImg" />
+          <img src="./assets/nusapenida.webp" alt="" class="astralImg" />
+          <img src="./assets/night1.webp" alt="" class="astralImg" />
+          <img src="./assets/night8.webp" alt="" class="astralImg" />
+          <img src="./assets/hoiann.webp" alt="" class="astralImg" />
+          <img src="./assets/night4.webp" alt="" class="astralImg" />
+          <img src="./assets/night9.webp" alt="" class="astralImg" />
+          <img src="./assets/danang.webp" alt="" class="astralImg" />
+          <img src="./assets/night2.webp" alt="" class="astralImg" />
+          <img src="./assets/night10.webp" alt="" class="astralImg" />
+          <img src="./assets/brokenbeach.webp" alt="" class="astralImg" />
+        </div>
+        <div class="imageContainer" aria-hidden="true">
+          <img src="./assets/night7.webp" alt="" class="astralImg" />
+          <img src="./assets/night5.webp" alt="" class="astralImg" />
+          <img src="./assets/hanoi.webp" alt="" class="astralImg" />
+          <img src="./assets/night6.webp" alt="" class="astralImg" />
+          <img src="./assets/night3.webp" alt="" class="astralImg" />
+          <img src="./assets/nusapenida.webp" alt="" class="astralImg" />
+          <img src="./assets/night1.webp" alt="" class="astralImg" />
+          <img src="./assets/night8.webp" alt="" class="astralImg" />
+          <img src="./assets/hoiann.webp" alt="" class="astralImg" />
+          <img src="./assets/night4.webp" alt="" class="astralImg" />
+          <img src="./assets/night9.webp" alt="" class="astralImg" />
+          <img src="./assets/danang.webp" alt="" class="astralImg" />
+          <img src="./assets/night2.webp" alt="" class="astralImg" />
+          <img src="./assets/night10.webp" alt="" class="astralImg" />
+          <img src="./assets/brokenbeach.webp" alt="" class="astralImg" />
+        </div>
+      </div>
+      <div class="layover">
+        <span class="layoverText">BEYOND THE LENS</span>
+      </div>
+    </div>
+    <footer>
+      <span class="connect"> FIND ME ON </span>
+      <div class="icons">
+        <a target="_blank" href="https://github.com/Sahilsaxena9711">
+          <img title="" src="./assets/git.svg" alt="" class="icon" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/sahil-saxena-b65595a6/"
+        >
+          <img src="./assets/in.svg" alt="" class="icon" />
+        </a>
+        <a target="_blank" href="https://x.com/sahil_saxenajs">
+          <img title="" src="./assets/x.svg" alt="" class="icon" />
+        </a>
+        <a
+          target="_blank"
+          href="https://profile.playstation.com/DungeonMaster502"
+        >
+          <img title="" src="./assets/ps.svg" alt="" class="icon" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/sahilsaxena.js/">
+          <img title="" src="./assets/insta.svg" alt="" class="icon" />
+        </a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
