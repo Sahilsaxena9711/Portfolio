@@ -26,6 +26,6 @@ function onMarkActive(e) {
 }
 
 function loadFunc() {
-  // let load = document.getElementById("loading");
-  // load.style.display = "none";
+  let load = document.getElementById("loading");
+  load.style.display = "none";
 }
