@@ -24,6 +24,14 @@ body {
   flex-direction: column;
 }
 
+span {
+  user-select: none;
+}
+
+a {
+  user-select: text;
+}
+
 header {
   padding: 2rem 6rem;
   position: fixed;

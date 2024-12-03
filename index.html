@@ -78,8 +78,11 @@
         <div class="projectList">
           <span
             onclick="{onMarkActive(event)}"
-            id="Supplymint"
+            id="JsonDump"
             class="project active"
+            >Json Dump</span
+          >
+          <span onclick="{onMarkActive(event)}" id="Supplymint" class="project"
             >Supplymint</span
           >
           <span onclick="{onMarkActive(event)}" id="Slacktivism" class="project"
@@ -104,6 +107,22 @@
           >
         </div>
         <div class="projectDescription" id="descriptionList">
+          <span class="writtenText JsonDump dblock">
+            JSON Dump is a tool designed to help developers quickly generate
+            mock data and create API endpoints for testing and development. With
+            an intuitive interface, users can define the structure of their mock
+            data, generate dummy GET API endpoints from it, and use the data as
+            if it were coming from a backend. This tool is ideal for front-end
+            and UI design, allowing developers to focus on the front-end while
+            JSON Dump handles the mock backend. It simplifies the process of
+            creating and customizing data structures without requiring any
+            coding.
+            <br /><br />Link:
+            <a target="_blank" href="https://jsondump.devsahil.in"
+              >https://jsondump.devsahil.in</a
+            >
+          </span>
+
           <span class="writtenText Underreacted dnone">
             The blogging page, built using Gatsby.js and React.js, is a platform
             where a web developer shares insights and tutorials about modern web
@@ -173,7 +192,7 @@
               >https://www.slacktivism.in/</a
             ></span
           >
-          <span class="writtenText Supplymint dblock">
+          <span class="writtenText Supplymint dnone">
             Supplymint is a cloud-based supply chain management platform that
             connects all aspects of planning, purchasing, inventory, tracking,
             and sales in one collaborative system. It offers features such as
