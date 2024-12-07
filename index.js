@@ -1,5 +1,6 @@
 function onMarkActive(e) {
   let projects = [
+    "JsonDump",
     "Underreacted",
     "HtmlViewer",
     "Blacker",
@@ -13,12 +14,10 @@ function onMarkActive(e) {
     let tabElement = document.getElementById(_);
     if (_ == current) {
       tabElement.classList.add("active");
-
       element[0].classList.add("dblock");
       element[0].classList.remove("dnone");
     } else {
       tabElement.classList.remove("active");
-
       element[0].classList.add("dnone");
       element[0].classList.remove("dblock");
     }
