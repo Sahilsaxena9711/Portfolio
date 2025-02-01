@@ -1,6 +1,7 @@
 function onMarkActive(e) {
   let projects = [
     "JsonDump",
+    "Resixty",
     "Underreacted",
     "HtmlViewer",
     "Blacker",
