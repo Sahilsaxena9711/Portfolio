@@ -161,7 +161,7 @@ header {
 
 .pcontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 2rem 0 2rem 0;
 }
 
@@ -198,22 +198,27 @@ header {
 
 .projectList {
   display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
 }
 
 .projectDescription {
-  display: flex;
-  margin: 3rem 0 0 6rem;
+  /* display: flex; */
+  /* margin: 3rem 0 0 6rem; */
+  margin: 0rem;
+  width: 100%;
 }
 
 .project {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--lessWhite);
   cursor: pointer;
-  margin-top: 1rem;
-  line-height: 3rem;
+  margin: 1rem 2rem 0 0;
+  line-height: 2.4rem;
   font-weight: 400;
+  word-break: keep-all;
 }
 
 .project:hover {
@@ -222,6 +227,7 @@ header {
 
 .project:active {
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .writtenText {
@@ -250,7 +256,8 @@ a {
 
 .active {
   color: var(--white);
-  font-weight: 600;
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 .companies {
@@ -437,21 +444,8 @@ footer {
     width: 100%;
   }
 
-  .pcontainer {
-    flex-direction: column;
-  }
-
-  .projectList {
-    flex-direction: row;
-    align-items: center;
-    overflow-x: scroll;
-  }
   .project {
     margin-right: 1.6rem;
-  }
-  .projectDescription {
-    margin: 0rem;
-    width: 100%;
   }
 
   .companyLogo {

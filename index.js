@@ -1,12 +1,15 @@
 function onMarkActive(e) {
   let projects = [
     "JsonDump",
+    "Moglix",
     "Resixty",
+    "Credlix",
+    "ProgressIndicator",
+    "Slacktivism",
     "Underreacted",
     "HtmlViewer",
     "Blacker",
     "Beatsy",
-    "Slacktivism",
     "Supplymint",
   ];
   let current = e.target.id;
