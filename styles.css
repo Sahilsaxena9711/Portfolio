@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --lessWhite: rgba(255, 255, 255, 0.5);
+  --lessWhite: rgba(255, 255, 255, 0.8);
   --black: #000;
   --theme: #f95959;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
@@ -116,6 +116,24 @@ header {
   opacity: 0.8;
 }
 
+.cta {
+  background-color: var(--theme);
+  padding: 1rem;
+  color: var(--black);
+  font-size: 1.2rem;
+  display: flex;
+  transition: border-radius 0.5s ease-in-out;
+  flex-direction: row;
+  align-items: center;
+  border: 0;
+}
+
+.cta:hover {
+  cursor: pointer;
+  transition: border-radius 0.5s ease-in-out;
+  border-radius: 2rem;
+}
+
 .about {
   padding: 8rem 6rem 6rem 6rem;
 }
@@ -227,7 +245,7 @@ header {
 
 .project:active {
   font-weight: 600;
-  text-decoration: underline;
+  border-bottom: 0.2rem solid var(--theme);
 }
 
 .writtenText {
@@ -255,18 +273,18 @@ a {
 }
 
 .active {
-  color: var(--white);
   font-weight: 800;
-  text-decoration: underline;
+  color: var(--theme) !important;
+  border-bottom: 0.2rem solid var(--theme);
 }
 
 .companies {
   display: flex;
   flex-direction: row;
-  margin: 6rem 0 4rem 0;
+  margin: 6rem 2rem 4rem 2rem;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .company {
@@ -274,6 +292,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 2rem 0 0 0;
+  width: 33%;
   justify-content: center;
 }
 
@@ -314,6 +333,10 @@ a {
   gap: var(--gap);
   min-width: 100%;
   animation: scroll var(--duration) linear infinite;
+}
+
+.photos:hover .imageContainer {
+  animation-play-state: paused;
 }
 
 .astralImg {
@@ -386,10 +409,22 @@ footer {
     contrast(101%);
 }
 
+.ctaIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0;
+  filter: brightness(0) invert(0);
+}
+
 .icon:hover {
   scale: 1.1;
   filter: invert(49%) sepia(17%) saturate(6133%) hue-rotate(330deg)
     brightness(115%) contrast(95%);
+}
+
+.ctaIcon:hover {
+  scale: 1;
+  filter: brightness(0) invert(0);
 }
 
 .connect {
@@ -457,7 +492,7 @@ footer {
   }
 
   .companies {
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 1rem 4rem 1rem;
   }
 
   .astralImg,
@@ -472,5 +507,12 @@ footer {
   .icon {
     width: 2rem;
     height: 2rem;
+  }
+  .ctaIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .company {
+    width: 50%;
   }
 }
